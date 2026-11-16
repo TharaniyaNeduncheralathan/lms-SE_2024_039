@@ -1,18 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="6674659b-75b4-40b7-831c-3d8c7df3ef97" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lms.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/lms/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/lms/model/Book.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/lms/model/Member.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/lms/service/Library.java" afterDir="false" />
-    </list>
+    <list default="true" id="6674659b-75b4-40b7-831c-3d8c7df3ef97" name="Changes" comment="Week 2 Lab oop assignment 01" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -28,6 +17,18 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
+  "lastFilter": {
+    "state": "OPEN",
+    "assignee": "TharaniyaNeduncheralathan"
+  }
+}]]></component>
+  <component name="GithubPullRequestsUISettings"><![CDATA[{
+  "selectedUrlAndAccountId": {
+    "url": "https://github.com/TharaniyaNeduncheralathan/lms-SE_2024_039",
+    "accountId": "06a5dea7-692d-487d-94c1-50836bcb9095"
+  }
+}]]></component>
   <component name="ProjectColorInfo"><![CDATA[{
   "customColor": "",
   "associatedIndex": 8
@@ -70,5 +71,9 @@
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Week 2 Lab oop assignment 01" />
+    <option name="LAST_COMMIT_MESSAGE" value="Week 2 Lab oop assignment 01" />
   </component>
 </project>
