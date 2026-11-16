@@ -40,8 +40,7 @@ import lms.service.Library;
                     "Nadeesha Perera"
             );
 
-            Member member2 = new Member
-                    ( "M002",
+            Member member2 = new Member( "M002",
                     "Kasun Silva"
             );
 
