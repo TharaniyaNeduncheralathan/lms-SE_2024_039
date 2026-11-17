@@ -1,77 +1,42 @@
 package lms;
 import lms.model.Book;
-import lms.model.Member;
+import lms.model.DVD;
+import lms.model.Staff;
 import lms.service.Library;
+import lms.model.LibraryItem;
+public class Main {
+    public static void main(String[] args) {
 
-    public class Main {
+        Library library = new Library();
+        Book b1 = new Book("B001", "Clean Code", "Robert C. Martin"
+        );
+        Book b2 = new Book("B002", "Effective Java", "Joshua Bloch"
+        );
+        DVD d1 = new DVD("D001", "Introduction to Algorithms", 120
+        );
+        library.addItem(b1);
+        library.addItem(b2);
+        library.addItem(d1);
+        Book b = new Book("B009", "Test Book", "Someone");
+        LibraryItem same = b;
+        LibraryItem item = d1;
+        DVD dvd = (DVD) item;
+        System.out.println(dvd.getDurationMinutes());
+        library.addItem(b);
+        library.addItem(same);
+        Staff staff = new Staff("S001", "Nadeesha Perera"
+        );
+        library.addMember(staff);
+        library.listItems();
 
-        public static void main(String[] args) {
+        System.out.println();
+        library.listMembers();
 
-
-            Library library = new Library();
-
-
-            Book book1 = new Book(
-                    "Clean Code",
-                    "Robert C. Martin",
-                    "978-0132350884"
-            );
-
-            Book book2 = new Book(
-                    "Effective Java",
-                    "Joshua Bloch",
-                    "978-0134685991"
-            );
-
-            Book book3 = new Book(
-                    "The Pragmatic Programmer",
-                    "Hunt & Thomas",
-                    "978-0135957059"
-            );
-
-
-            library.addBook(book1);
-            library.addBook(book2);
-            library.addBook(book3);
-
-
-            Member member1 = new Member(
-                    "M001",
-                    "Nadeesha Perera"
-            );
-
-            Member member2 = new Member( "M002",
-                    "Kasun Silva"
-            );
-
-
-            library.addMember(member1);
-            library.addMember(member2);
-
-
-            library.listBooks();
-
-            System.out.println();
-
-
-            library.listMembers();
-
-            System.out.println();
-
-
-            try {
-                Book invalidBook = new Book(
-                        "",
-                        "Nobody",
-                        "000-0000000000"
-                );
-
-                library.addBook(invalidBook);
-
-            } catch (IllegalArgumentException e) {
-                System.out.println("Rejected invalid book: " + e.getMessage());
-            }
-        }
+        System.out.println();
+        library.printAllLateFees(3);
+        System.out.println();
+        library.streamIfPossible(d1);
+        library.streamIfPossible(b1);
     }
 
-
+}
