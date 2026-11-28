@@ -1,21 +1,38 @@
 package model;
 
-public class Member {
+public class Member implements Comparable<Member> {
 
-    private String memberId;
-    private String name;
-    private int maxBorrowLimit;
+    protected String name;
+    protected int borrowedCount;
+    protected int maxBorrowLimit;
 
-    public Member(String memberId, String name, int maxBorrowLimit) {
-        this.memberId = memberId;
+    public Member(String name, int maxBorrowLimit) {
         this.name = name;
         this.maxBorrowLimit = maxBorrowLimit;
+        this.borrowedCount = 0;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public int getBorrowedCount() {
+        return borrowedCount;
+    }
+
+    public int getMaxBorrowLimit() {
+        return maxBorrowLimit;
+    }
+
+    public void incrementBorrowedCount() {
+        borrowedCount++;
     }
 
     @Override
-    public String toString() {
-        return "Member{id='" + memberId +
-                "', name='" + name +
-                "', limit=" + maxBorrowLimit + "}";
+    public int compareTo(Member other) {
+        return Integer.compare(
+                other.borrowedCount,
+                this.borrowedCount
+        );
     }
 }
